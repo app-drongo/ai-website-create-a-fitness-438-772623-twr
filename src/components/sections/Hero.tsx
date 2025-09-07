@@ -1,4 +1,6 @@
 // components/hero/SplitHero.tsx
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle2, Play } from 'lucide-react';
 import Image from 'next/image';

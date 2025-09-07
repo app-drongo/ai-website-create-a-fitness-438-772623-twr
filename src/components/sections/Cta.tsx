@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Target, Trophy, Zap, Shield } from 'lucide-react';

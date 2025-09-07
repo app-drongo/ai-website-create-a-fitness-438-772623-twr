@@ -1,6 +1,6 @@
-
 "use client"
 import { useState } from 'react';
+import Link from 'next/link';  // Add this import
 import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
@@ -21,22 +21,22 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Brand */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-xl font-bold text-primary">
+            <Link href="/" className="text-xl font-bold text-primary">
               Peak Performance Coaching
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navigationItems.map(item => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -67,13 +67,14 @@ export default function Navigation() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-card border-t border-muted">
               {navigationItems.map(item => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                  onClick={() => setIsOpen(false)}  // Close menu on click
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="pt-4 pb-2 space-y-2">
                 <button className="w-full text-left text-primary hover:text-primary/80 px-3 py-2 rounded-md text-base font-medium transition-colors">

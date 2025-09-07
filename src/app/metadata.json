@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Homepage",
+    "route": "/",
+    "title": "Homepage | create-a-fitness-4384",
+    "description": "Homepage page for create-a-fitness-4384"
+  },
+  {
+    "name": "About",
+    "route": "/about",
+    "title": "About | create-a-fitness-4384",
+    "description": "About page for create-a-fitness-4384"
+  },
+  {
+    "name": "Services",
+    "route": "/services",
+    "title": "Services | create-a-fitness-4384",
+    "description": "Services page for create-a-fitness-4384"
+  },
+  {
+    "name": "Transformations",
+    "route": "/transformations",
+    "title": "Transformations | create-a-fitness-4384",
+    "description": "Transformations page for create-a-fitness-4384"
+  },
+  {
+    "name": "Blog",
+    "route": "/blog",
+    "title": "Blog | create-a-fitness-4384",
+    "description": "Blog page for create-a-fitness-4384"
+  },
+  {
+    "name": "Contact",
+    "route": "/contact",
+    "title": "Contact | create-a-fitness-4384",
+    "description": "Contact page for create-a-fitness-4384"
+  }
+]
